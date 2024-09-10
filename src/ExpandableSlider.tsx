@@ -37,6 +37,8 @@ const ExpandableSlider: FC<ExpandableSliderProps> = (
     indicatorSize,
     min,
     max,
+    colorA,
+    colorB,
     value,
     useHapticResponse,
     heightRef,
@@ -239,8 +241,10 @@ const ExpandableSlider: FC<ExpandableSliderProps> = (
           <LinearGradient
             style={[styles.activeGradient]}
             colors={[
-              'rgba(255, 255, 255, 0.95)',
-              'rgba(255, 255, 255, 0.0001)',
+              // 'rgba(255, 255, 255, 0.95)',
+              // 'rgba(255, 255, 255, 0.0001)',
+              colorA,
+              colorB,
             ]}
             locations={[0, 1]}
             useAngle={true}
