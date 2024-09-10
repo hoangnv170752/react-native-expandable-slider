@@ -10,6 +10,10 @@ export interface ExpandableSliderProps {
 
   max?: number;
 
+  colorA?: string;
+
+  colorB?: string;
+
   value?: number;
 
   style?: ViewProps['style'];
